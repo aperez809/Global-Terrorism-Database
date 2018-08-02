@@ -1,0 +1,35 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
+
+```{r}
+library('ggplot2')
+library('ggmap')
+
+#setwd('/Users/alexperez/Downloads')
+
+terrorism <- read.csv('/Users/alexperez/Downloads/globalterrorismdb_0617dist.csv')
+terrorism
+```
+```{r}
+library(rworldmap)
+library(rworldxtra)
+newmap <- getMap(resolution='low')
+plot(newmap, xlim = c(min(terrorism$longitude, na.rm=T), max(terrorism$longitude, na.rm=T)), ylim = c(min(terrorism$latitude, na.rm=T), max(terrorism$latitude,na.rm=T)), asp=1)
+
+points(terrorism$longitude, terrorism$latitude, col="red", cex=.05)
+
+```
