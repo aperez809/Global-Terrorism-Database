@@ -1,5 +1,5 @@
 package main;
 
-public class TerrorismMySQL {
+public class TerrorismMySQL implements TerrorismAPI {
 
 }
