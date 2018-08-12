@@ -1,35 +1,36 @@
 package main;
 
 public class TargetType {
-    private int targettype_id;
-    private String targettype_txt;
 
-    public TargetType(int targettype_id, String targettype_txt) {
-        this.targettype_id = targettype_id;
-        this.targettype_txt = targettype_txt;
+  private int targetTypeId;
+  private String targetTypeTxt;
+
+    public TargetType(int targetTypeId, String targetTypeTxt) {
+        this.targetTypeId = targetTypeId;
+        this.targetTypeTxt = targetTypeTxt;
     }
 
     @Override
     public String toString() {
         return "TargetType{" +
-                "targettype_id=" + targettype_id +
-                ", targettype_txt=" + targettype_txt +
+                "targetTypeId=" + targetTypeId +
+                ", targetTypeTxt=" + targetTypeTxt +
                 '}';
     }
 
-    public int getTargettype_id() {
-        return targettype_id;
+    public int getTargetTypeId() {
+        return targetTypeId;
     }
 
-    public void setTargettype_id(int targettype_id) {
-        this.targettype_id = targettype_id;
+    public void setTargetTypeId(int targetTypeId) {
+        this.targetTypeId = targetTypeId;
     }
 
-    public String getTargettype_txt() {
-        return targettype_txt;
+    public String getTargetTypeTxt() {
+        return targetTypeTxt;
     }
 
-    public void setTargettype_txt(String targettype_txt) {
-        this.targettype_txt = targettype_txt;
+    public void setTargetTypeTxt(String targetTypeTxt) {
+        this.targetTypeTxt = targetTypeTxt;
     }
 }

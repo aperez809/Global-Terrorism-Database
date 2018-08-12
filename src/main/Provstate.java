@@ -4,9 +4,9 @@ public class Provstate {
     private int provstateId;
     private String provstateName;
 
-    public Provstate(int provstate_id, String provstate_name) {
-        this.provstateId = provstate_id;
-        this.provstateName = provstate_name;
+    public Provstate(int provstateId, String provstateName) {
+        this.provstateId = provstateId;
+        this.provstateName = provstateName;
     }
 
     @Override

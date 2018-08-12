@@ -21,4 +21,14 @@ public interface TerrorismAPI {
   int getOrInsertTarget(Target target);
   int getOrInsertTargetType(TargetType targetType);
   int getOrInsertWeaponType(WeaponType weaponType);
+
+  /**
+   * Set connection settings
+   */
+  public void setConnection(String url, String user, String password);
+
+  /**
+   * Close the connection when application finishes
+   */
+  public void closeConnection();
 }
