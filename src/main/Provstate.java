@@ -1,35 +1,35 @@
 package main;
 
 public class Provstate {
-    private int provstate_id;
-    private String provstate_name;
+    private int provstateId;
+    private String provstateName;
 
     public Provstate(int provstate_id, String provstate_name) {
-        this.provstate_id = provstate_id;
-        this.provstate_name = provstate_name;
+        this.provstateId = provstate_id;
+        this.provstateName = provstate_name;
     }
 
     @Override
     public String toString() {
         return "Provstate{" +
-                "provstate_id=" + provstate_id +
-                ", provstate_name=" + provstate_name +
+                "provstateId=" + provstateId +
+                ", provstateName=" + provstateName +
                 '}';
     }
 
-    public int getProvstate_id() {
-        return provstate_id;
+    public int getProvstateId() {
+        return provstateId;
     }
 
-    public void setProvstate_id(int provstate_id) {
-        this.provstate_id = provstate_id;
+    public void setProvstateId(int provstateId) {
+        this.provstateId = provstateId;
     }
 
-    public String getProvstate_name() {
-        return provstate_name;
+    public String getProvstateName() {
+        return provstateName;
     }
 
-    public void setProvstate_name(String provstate_name) {
-        this.provstate_name = provstate_name;
+    public void setProvstateName(String provstateName) {
+        this.provstateName = provstateName;
     }
 }

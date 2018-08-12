@@ -2,37 +2,37 @@ package main;
 
 public class AttackType {
 
-    private int attacktype_id;
-    private String attacktype_txt;
+    private int attacktypeId;
+    private String attacktypeTxt;
 
 
-    public AttackType(int attacktype_id, String attacktype_txt) {
-        this.attacktype_id = -1;
-        this.attacktype_txt = attacktype_txt;
+    public AttackType(int attacktypeId, String attacktypeTxt) {
+        this.attacktypeId = -1;
+        this.attacktypeTxt = attacktypeTxt;
     }
 
     @Override
     public String toString() {
         return "Country{" +
-                "attacktype_id=" + attacktype_id +
-                ", attacktype_txt=" + attacktype_txt +
+                "attacktypeId=" + attacktypeId +
+                ", attacktypeTxt=" + attacktypeTxt +
                 '}';
     }
 
-    public int getAttacktype_id() {
-        return attacktype_id;
+    public int getAttacktypeId() {
+        return attacktypeId;
     }
 
-    public void setAttacktypeId(int attacktype_id) {
-        this.attacktype_id = attacktype_id;
+    public void setAttacktypeId(int attacktypeId) {
+        this.attacktypeId = attacktypeId;
     }
 
-    public String getAttacktype_txt() {
-        return attacktype_txt;
+    public String getAttacktypeTxt() {
+        return attacktypeTxt;
     }
 
-    public void setAttacktype_txt(String attacktype_txt) {
-        this.attacktype_txt = attacktype_txt;
+    public void setAttacktypeTxt(String attacktypeTxt) {
+        this.attacktypeTxt = attacktypeTxt;
     }
 
 }

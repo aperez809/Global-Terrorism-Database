@@ -5,10 +5,10 @@ public class EventTarget {
   private int eventId;
   private int targetId;
 
-  public EventTarget(int event_target_id, int event_id, int target_id) {
+  public EventTarget(int eventTargetId, int eventId, int targetId) {
     this.eventTargetId = -1;
-    this.eventId = event_id;
-    this.targetId = target_id;
+    this.eventId = eventId;
+    this.targetId = targetId;
   }
 
   @Override
@@ -23,9 +23,9 @@ public class EventTarget {
   public int getEventTargetID() {
     return eventTargetId;
   }
-  
-  public void setEventTargetID(int eventTargetID) {
-    this.eventTargetId = eventTargetID;
+
+  public void setEventTargetID(int eventTargetId) {
+    this.eventTargetId = eventTargetId;
   }
 
   public int getEventId() {

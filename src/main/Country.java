@@ -1,37 +1,37 @@
 package main;
 
 public class Country {
-    private int country_id;
-    private String country_name;
+    private int countryId;
+    private String countryName;
 
 
-    public Country(int country_id, String country_name) {
-        this.country_id = -1;
-        this.country_name = country_name;
+    public Country(int countryId, String countryName) {
+        this.countryId = -1;
+        this.countryName = countryName;
     }
 
     @Override
     public String toString() {
         return "Country{" +
-                "country_id=" + country_id +
-                ", country_name=" + country_name +
+                "countryId=" + countryId +
+                ", countryName=" + countryName +
                 '}';
     }
 
-    public int getCountry_id() {
-        return country_id;
+    public int getCountryId() {
+        return countryId;
     }
 
-    public void setCountry_id(int country_id) {
-        this.country_id = country_id;
+    public void setCountryId(int countryId) {
+        this.countryId = countryId;
     }
 
-    public String getCountry_name() {
-        return country_name;
+    public String getCountryName() {
+        return countryName;
     }
 
-    public void setCountry_name(String country_name) {
-        this.country_name = country_name;
+    public void setCountryName(String countryName) {
+        this.countryName = countryName;
     }
 
 }

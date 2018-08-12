@@ -1,41 +1,41 @@
 package main;
 
 public class Outcome {
-    private int event_id;
+    private int eventId;
     private boolean suicide;
     private boolean multiple;
     private boolean success;
-    private int num_killed;
-    private int num_injured;
+    private int numKilled;
+    private int numInjured;
 
-    public Outcome(int event_id, boolean suicide, boolean multiple, boolean success, int num_killed, int num_injured) {
-        this.event_id = -1;
+    public Outcome(int eventId, boolean suicide, boolean multiple, boolean success, int numKilled, int numInjured) {
+        this.eventId = -1;
         this.suicide = suicide;
         this.multiple = multiple;
         this.success = success;
-        this.num_killed = num_killed;
-        this.num_injured = num_injured;
+        this.numKilled = numKilled;
+        this.numInjured = numInjured;
     }
 
     @Override
     public String toString() {
         return "Outcome{" +
-                "event_id=" + event_id +
+                "eventId=" + eventId +
                 ", suicide=" + suicide +
                 ", multiple=" + multiple +
                 ", success=" + success +
-                ", num_killed=" + num_killed +
-                ", num_injured=" + num_injured +
+                ", numKilled=" + numKilled +
+                ", numInjured=" + numInjured +
                 '}';
     }
 
 
-    public int getEvent_id() {
-        return event_id;
+    public int getEventId() {
+        return eventId;
     }
 
-    public void setEvent_id(int event_id) {
-        this.event_id = event_id;
+    public void setEventId(int eventId) {
+        this.eventId = eventId;
     }
 
     public boolean isSuicide() {
@@ -62,19 +62,19 @@ public class Outcome {
         this.success = success;
     }
 
-    public int getNum_killed() {
-        return num_killed;
+    public int getNumKilled() {
+        return numKilled;
     }
 
-    public void setNum_killed(int num_killed) {
-        this.num_killed = num_killed;
+    public void setNumKilled(int numKilled) {
+        this.numKilled = numKilled;
     }
 
-    public int getNum_injured() {
-        return num_injured;
+    public int getNumInjured() {
+        return numInjured;
     }
 
-    public void setNum_injured(int num_injured) {
-        this.num_injured = num_injured;
+    public void setNumInjured(int numInjured) {
+        this.numInjured = numInjured;
     }
 }

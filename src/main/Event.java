@@ -1,52 +1,52 @@
 package main;
 
 public class Event {
-    private int event_id;
+    private int eventId;
     private int year;
     private int month;
     private int day;
-    private boolean doubtterr;
+    private boolean doubtTerr;
     private String summary;
-    private int num_perps;
-    private int location_id;
-    private int attacktype_id;
+    private int numPerps;
+    private int locationId;
+    private int attacktypeId;
 
 
-    public Event(int event_id, int year, int month, int day, boolean doubtterr,
-                 String summary, int num_perps, int location_id, int attacktype_id) {
+    public Event(int eventId, int year, int month, int day, boolean doubtTerr,
+                 String summary, int numPerps, int locationId, int attackTypeId) {
 
-        this.event_id = -1;
+        this.eventId = -1;
         this.year = year;
         this.month = month;
         this.day = day;
-        this.doubtterr = doubtterr;
+        this.doubtTerr = doubtTerr;
         this.summary = summary;
-        this.num_perps = num_perps;
-        this.location_id = location_id;
-        this.attacktype_id = attacktype_id;
+        this.numPerps = numPerps;
+        this.locationId = locationId;
+        this.attacktypeId = attackTypeId;
     }
 
     @Override
     public String toString() {
         return "Event{" +
-                "event_id=" + event_id +
+                "eventId=" + eventId +
                 ", year=" + year +
                 ", month=" + month +
                 ", day=" + day +
-                ", doubterr=" + doubtterr +
+                ", doubtTerr=" + doubtTerr +
                 ", summary=" + summary +
-                ", num_perps=" + num_perps +
-                ", location_id=" + location_id +
-                ", attacktype_id=" + attacktype_id +
+                ", numPerps=" + numPerps +
+                ", locationId=" + locationId +
+                ", attacktypeId=" + attacktypeId +
                 '}';
     }
 
-    public int getEvent_id() {
-        return event_id;
+    public int getEventId() {
+        return eventId;
     }
 
-    public void setEvent_id(int event_id) {
-        this.event_id = event_id;
+    public void setEventId(int eventId) {
+        this.eventId = eventId;
     }
 
     public int getYear() {
@@ -73,12 +73,12 @@ public class Event {
         this.day = day;
     }
 
-    public boolean isDoubtterr() {
-        return doubtterr;
+    public boolean isDoubtTerr() {
+        return doubtTerr;
     }
 
-    public void setDoubtterr(boolean doubtterr) {
-        this.doubtterr = doubtterr;
+    public void setDoubtTerr(boolean doubtTerr) {
+        this.doubtTerr = doubtTerr;
     }
 
     public String getSummary() {
@@ -89,28 +89,28 @@ public class Event {
         this.summary = summary;
     }
 
-    public int getNum_perps() {
-        return num_perps;
+    public int getNumPerps() {
+        return numPerps;
     }
 
-    public void setNum_perps(int num_perps) {
-        this.num_perps = num_perps;
+    public void setNumPerps(int numPerps) {
+        this.numPerps = numPerps;
     }
 
-    public int getLocation_id() {
-        return location_id;
+    public int getLocationId() {
+        return locationId;
     }
 
-    public void setLocation_id(int location_id) {
-        this.location_id = location_id;
+    public void setLocationId(int locationId) {
+        this.locationId = locationId;
     }
 
-    public int getAttacktype_id() {
-        return attacktype_id;
+    public int getAttacktypeId() {
+        return attacktypeId;
     }
 
-    public void setAttacktype_id(int attacktype_id) {
-        this.attacktype_id = attacktype_id;
+    public void setAttacktypeId(int attacktypeId) {
+        this.attacktypeId = attacktypeId;
     }
 }
 
