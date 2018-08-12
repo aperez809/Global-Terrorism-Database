@@ -1,12 +1,12 @@
 package main;
 
-public class Attacktype {
+public class AttackType {
 
     private int attacktype_id;
     private String attacktype_txt;
 
 
-    public Attacktype(int attacktype_id, String attacktype_txt) {
+    public AttackType(int attacktype_id, String attacktype_txt) {
         this.attacktype_id = -1;
         this.attacktype_txt = attacktype_txt;
     }
