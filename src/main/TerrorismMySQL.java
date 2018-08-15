@@ -9,6 +9,7 @@ import java.util.*;
 public class TerrorismMySQL implements TerrorismAPI {
 
   // need a constructor
+  DBUtils dbu;
 
   @Override
   public Event getEventById(int eventId) {
@@ -17,6 +18,7 @@ public class TerrorismMySQL implements TerrorismAPI {
 
   @Override
   public int insertEvent(Event event) {
+
     return 0;
   }
 
