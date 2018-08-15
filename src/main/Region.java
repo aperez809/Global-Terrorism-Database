@@ -1,35 +1,36 @@
 package main;
 
 public class Region {
-    private int regionId;
-    private String regionName;
 
-    public Region(int regionId, String regionName) {
-        this.regionId = regionId;
-        this.regionName = regionName;
-    }
+  private int regionId;
+  private String regionName;
 
-    @Override
-    public String toString() {
-        return "Region{" +
-                "regionId=" + regionId +
-                ", regionName=" + regionName +
-                '}';
-    }
+  public Region(int regionId, String regionName) {
+    this.regionId = regionId;
+    this.regionName = regionName;
+  }
 
-    public int getRegionId() {
-        return regionId;
-    }
+  @Override
+  public String toString() {
+    return "Region{" +
+        "regionId=" + regionId +
+        ", regionName=" + regionName +
+        '}';
+  }
 
-    public void setRegionId(int regionId) {
-        this.regionId = regionId;
-    }
+  public int getRegionId() {
+    return regionId;
+  }
 
-    public String getRegionName() {
-        return regionName;
-    }
+  public void setRegionId(int regionId) {
+    this.regionId = regionId;
+  }
 
-    public void setRegionName(String regionName) {
-        this.regionName = regionName;
-    }
+  public String getRegionName() {
+    return regionName;
+  }
+
+  public void setRegionName(String regionName) {
+    this.regionName = regionName;
+  }
 }

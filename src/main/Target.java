@@ -1,68 +1,70 @@
 package main;
 
 public class Target {
-    private int targetId;
-    private int targetTypeId;
-    private String entityName;
-    private String specificTargetName;
-    private int nationalityId;
 
-    public Target(int targetId, int targettypeId, String entityName, String specificTargetName, int nationalityId) {
-        this.targetId = targetId;
-        this.targetTypeId = targettypeId;
-        this.entityName = entityName;
-        this.specificTargetName = specificTargetName;
-        this.nationalityId = nationalityId;
-    }
+  private int targetId;
+  private int targetTypeId;
+  private String entityName;
+  private String specificTargetName;
+  private int nationalityId;
 
-    @Override
-    public String toString() {
-        return "Region{" +
-                "targetId=" + targetId +
-                ", targetTypeId=" + targetTypeId +
-                ", entityName=" + entityName +
-                ", specificTargetName=" + specificTargetName +
-                ", nationalityId=" + nationalityId +
-                '}';
-    }
+  public Target(int targetId, int targettypeId, String entityName, String specificTargetName,
+      int nationalityId) {
+    this.targetId = targetId;
+    this.targetTypeId = targettypeId;
+    this.entityName = entityName;
+    this.specificTargetName = specificTargetName;
+    this.nationalityId = nationalityId;
+  }
 
-    public int getTargetId() {
-        return targetId;
-    }
+  @Override
+  public String toString() {
+    return "Region{" +
+        "targetId=" + targetId +
+        ", targetTypeId=" + targetTypeId +
+        ", entityName=" + entityName +
+        ", specificTargetName=" + specificTargetName +
+        ", nationalityId=" + nationalityId +
+        '}';
+  }
 
-    public void setTargetId(int targetId) {
-        this.targetId = targetId;
-    }
+  public int getTargetId() {
+    return targetId;
+  }
 
-    public int getTargetTypeId() {
-        return targetTypeId;
-    }
+  public void setTargetId(int targetId) {
+    this.targetId = targetId;
+  }
 
-    public void setTargetTypeId(int targetTypeId) {
-        this.targetTypeId = targetTypeId;
-    }
+  public int getTargetTypeId() {
+    return targetTypeId;
+  }
 
-    public String getEntityName() {
-        return entityName;
-    }
+  public void setTargetTypeId(int targetTypeId) {
+    this.targetTypeId = targetTypeId;
+  }
 
-    public void setEntityName(String entityName) {
-        this.entityName = entityName;
-    }
+  public String getEntityName() {
+    return entityName;
+  }
 
-    public String getSpecificTargetName() {
-        return specificTargetName;
-    }
+  public void setEntityName(String entityName) {
+    this.entityName = entityName;
+  }
 
-    public void setSpecificTargetName(String specificTargetName) {
-        this.specificTargetName = specificTargetName;
-    }
+  public String getSpecificTargetName() {
+    return specificTargetName;
+  }
 
-    public int getNationalityId() {
-        return nationalityId;
-    }
+  public void setSpecificTargetName(String specificTargetName) {
+    this.specificTargetName = specificTargetName;
+  }
 
-    public void setNationalityId(int nationalityId) {
-        this.nationalityId = nationalityId;
-    }
+  public int getNationalityId() {
+    return nationalityId;
+  }
+
+  public void setNationalityId(int nationalityId) {
+    this.nationalityId = nationalityId;
+  }
 }

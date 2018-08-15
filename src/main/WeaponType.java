@@ -1,35 +1,36 @@
 package main;
 
 public class WeaponType {
-    private int weaponTypeId;
-    private String weaponTypeTxt;
 
-    public WeaponType(int weaponTypeId, String weaponTypeTxt) {
-        this.weaponTypeId = weaponTypeId;
-        this.weaponTypeTxt = weaponTypeTxt;
-    }
+  private int weaponTypeId;
+  private String weaponTypeTxt;
 
-    @Override
-    public String toString() {
-        return "WeaponType{" +
-                "weaponTypeId=" + weaponTypeId +
-                ", weaponTypeTxt=" + weaponTypeTxt +
-                '}';
-    }
+  public WeaponType(int weaponTypeId, String weaponTypeTxt) {
+    this.weaponTypeId = weaponTypeId;
+    this.weaponTypeTxt = weaponTypeTxt;
+  }
 
-    public int getWeaponTypeId() {
-        return weaponTypeId;
-    }
+  @Override
+  public String toString() {
+    return "WeaponType{" +
+        "weaponTypeId=" + weaponTypeId +
+        ", weaponTypeTxt=" + weaponTypeTxt +
+        '}';
+  }
 
-    public void setWeaponTypeId(int weaponTypeId) {
-        this.weaponTypeId = weaponTypeId;
-    }
+  public int getWeaponTypeId() {
+    return weaponTypeId;
+  }
 
-    public String getWeaponTypeTxt() {
-        return weaponTypeTxt;
-    }
+  public void setWeaponTypeId(int weaponTypeId) {
+    this.weaponTypeId = weaponTypeId;
+  }
 
-    public void setWeaponTypeTxt(String weaponTypeTxt) {
-        this.weaponTypeTxt = weaponTypeTxt;
-    }
+  public String getWeaponTypeTxt() {
+    return weaponTypeTxt;
+  }
+
+  public void setWeaponTypeTxt(String weaponTypeTxt) {
+    this.weaponTypeTxt = weaponTypeTxt;
+  }
 }

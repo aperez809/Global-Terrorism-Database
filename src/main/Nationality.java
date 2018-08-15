@@ -1,35 +1,36 @@
 package main;
 
 public class Nationality {
-    private int nationalityId;
-    private String nationalityTxt;
 
-    public Nationality(int nationalityId, String nationalityTxt) {
-        this.nationalityId = -1;
-        this.nationalityTxt = nationalityTxt;
-    }
+  private int nationalityId;
+  private String nationalityTxt;
 
-    @Override
-    public String toString() {
-        return "Nationality{" +
-                "nationalityId=" + nationalityId +
-                ", nationalityTxt=" + nationalityTxt +
-                '}';
-    }
+  public Nationality(int nationalityId, String nationalityTxt) {
+    this.nationalityId = -1;
+    this.nationalityTxt = nationalityTxt;
+  }
 
-    public int getNationalityId() {
-        return nationalityId;
-    }
+  @Override
+  public String toString() {
+    return "Nationality{" +
+        "nationalityId=" + nationalityId +
+        ", nationalityTxt=" + nationalityTxt +
+        '}';
+  }
 
-    public void setNationalityId(int nationalityId) {
-        this.nationalityId = nationalityId;
-    }
+  public int getNationalityId() {
+    return nationalityId;
+  }
 
-    public String getNationalityTxt() {
-        return nationalityTxt;
-    }
+  public void setNationalityId(int nationalityId) {
+    this.nationalityId = nationalityId;
+  }
 
-    public void setNationalityTxt(String nationalityTxt) {
-        this.nationalityTxt = nationalityTxt;
-    }
+  public String getNationalityTxt() {
+    return nationalityTxt;
+  }
+
+  public void setNationalityTxt(String nationalityTxt) {
+    this.nationalityTxt = nationalityTxt;
+  }
 }

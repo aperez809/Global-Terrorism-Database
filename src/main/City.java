@@ -1,37 +1,38 @@
 package main;
 
 public class City {
-    private int cityId;
-    private String cityName;
+
+  private int cityId;
+  private String cityName;
 
 
-    public City(int cityId, String cityName) {
-        this.cityId = -1;
-        this.cityName = cityName;
-    }
+  public City(int cityId, String cityName) {
+    this.cityId = -1;
+    this.cityName = cityName;
+  }
 
-    @Override
-    public String toString() {
-        return "Country{" +
-                "cityId=" + cityId +
-                ", cityName=" + cityName +
-                '}';
-    }
+  @Override
+  public String toString() {
+    return "Country{" +
+        "cityId=" + cityId +
+        ", cityName=" + cityName +
+        '}';
+  }
 
-    public int getCityId() {
-        return cityId;
-    }
+  public int getCityId() {
+    return cityId;
+  }
 
-    public void setCityId(int cityId) {
-        this.cityId = cityId;
-    }
+  public void setCityId(int cityId) {
+    this.cityId = cityId;
+  }
 
-    public String getCityName() {
-        return cityName;
-    }
+  public String getCityName() {
+    return cityName;
+  }
 
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
-    }
+  public void setCityName(String cityName) {
+    this.cityName = cityName;
+  }
 
-    }
+}
