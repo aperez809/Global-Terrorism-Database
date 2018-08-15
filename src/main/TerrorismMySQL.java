@@ -17,68 +17,76 @@ public class TerrorismMySQL implements TerrorismAPI {
   }
 
   @Override
-  public int insertEvent(Event event) {
+  public int insertEvent(Event e) {
+    String sql =
+        "INSERT INTO event(event_id, year, month, day, doubterr, summary, num_perps, "
+            + "location_id, attacktype_id, target_id, weapontype_id) VALUES "
+            + "('" + e.getEventId() + "','" + e.getYear() + "','" + e.getMonth()
+            + "','" + e.getDay() + "','" + e.isDoubtTerr() + "','" + e.getSummary()
+            + "','" + e.getNumPerps() + "','" + e.getLocationId() + "','" + e.getAttacktypeId()
+            + "','" + e.getTargetTypeId() + "','" + e.getWeaponTypeId() + "')";
+    return dbu.insertOneRecord(sql);
+  }
 
+  @Override
+  public int getOrInsertAttackType(AttackType a) {
+    String sql = "INSERT INTO attacktype(attacktype_id, attacktype_txt) VALUES "
+        + "('" + a.getAttacktypeId() + ",'" + a.getAttacktypeTxt() + ")'";
+    return dbu.insertOneRecord(sql);
+  }
+
+  @Override
+  public int getOrInsertCity(City c) {
     return 0;
   }
 
   @Override
-  public int getOrInsertAttackType(AttackType attackType) {
+  public int getOrInsertCountry(Country c) {
     return 0;
   }
 
   @Override
-  public int getOrInsertCity(City city) {
+  public int insertEventTarget(EventTarget e) {
     return 0;
   }
 
   @Override
-  public int getOrInsertCountry(Country country) {
+  public int insertLocation(Location l) {
     return 0;
   }
 
   @Override
-  public int insertEventTarget(EventTarget eventTarget) {
+  public int getOrInsertNationality(Nationality n) {
     return 0;
   }
 
   @Override
-  public int insertLocation(Location location) {
+  public int insertOutcome(Outcome o) {
     return 0;
   }
 
   @Override
-  public int getOrInsertNationality(Nationality nationality) {
+  public int getOrInsertProvstate(Provstate p) {
     return 0;
   }
 
   @Override
-  public int insertOutcome(Outcome outcome) {
+  public int getOrInsertRegion(Region r) {
     return 0;
   }
 
   @Override
-  public int getOrInsertProvstate(Provstate provstate) {
+  public int getOrInsertTarget(Target t) {
     return 0;
   }
 
   @Override
-  public int getOrInsertRegion(Region region) {
+  public int getOrInsertTargetType(TargetType t) {
     return 0;
   }
 
   @Override
-  public int getOrInsertTarget(Target target) {
-    return 0;
-  }
-
-  @Override
-  public int getOrInsertTargetType(TargetType targetType) {
-    return 0;
-  }
-
-  @Override
-  public int getOrInsertWeaponType(WeaponType weaponType) {
+  public int getOrInsertWeaponType(WeaponType w) {
     return 0;
   }
 

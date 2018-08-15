@@ -17,7 +17,7 @@ public interface TerrorismAPI {
    * @param event the event
    * @return ID of newly created Event or -1 if already exists
    */
-  int insertEvent(Event event);
+  int insertEvent(Event e);
 
   /**
    * Get or insert on attacktype term
@@ -25,7 +25,7 @@ public interface TerrorismAPI {
    * @param attackType the attacktype
    * @return ID of a new or existing attacktype
    */
-  int getOrInsertAttackType(AttackType attackType);
+  int getOrInsertAttackType(AttackType a);
 
   /**
    * Get or insert on city term
@@ -33,7 +33,7 @@ public interface TerrorismAPI {
    * @param city the city
    * @return ID of a new or existing city
    */
-  int getOrInsertCity(City city);
+  int getOrInsertCity(City c);
 
   /**
    * Get or insert on country term
@@ -41,7 +41,7 @@ public interface TerrorismAPI {
    * @param country the country
    * @return ID of a new or existing country
    */
-  int getOrInsertCountry(Country country);
+  int getOrInsertCountry(Country c);
 
   /**
    * Insert one EventTarget
@@ -49,7 +49,7 @@ public interface TerrorismAPI {
    * @param eventTarget the EventTarget
    * @return ID of newly created EventTarget or -1 if already exists
    */
-  int insertEventTarget(EventTarget eventTarget);
+  int insertEventTarget(EventTarget e);
 
   /**
    * Insert one Location
@@ -57,7 +57,7 @@ public interface TerrorismAPI {
    * @param location the location
    * @return ID of newly created Location or -1 if already exists
    */
-  int insertLocation(Location location);
+  int insertLocation(Location l);
 
   /**
    * Get or insert on Nationality term
@@ -65,7 +65,7 @@ public interface TerrorismAPI {
    * @param nationality the nationality
    * @return ID of new or existing nationality
    */
-  int getOrInsertNationality(Nationality nationality);
+  int getOrInsertNationality(Nationality n);
 
   /**
    * Insert outcome
@@ -73,7 +73,7 @@ public interface TerrorismAPI {
    * @param outcome the outcome
    * @return ID of newly created nationality or -1 if already exists
    */
-  int insertOutcome(Outcome outcome);
+  int insertOutcome(Outcome o);
 
   /**
    * Get or insert on Provstate term
@@ -81,7 +81,7 @@ public interface TerrorismAPI {
    * @param provstate the Provstate
    * @return ID of new or existing Provstate
    */
-  int getOrInsertProvstate(Provstate provstate);
+  int getOrInsertProvstate(Provstate p);
 
   /**
    * Get or insert on Region term
@@ -89,7 +89,7 @@ public interface TerrorismAPI {
    * @param region the Region
    * @return ID of new or existing Region
    */
-  int getOrInsertRegion(Region region);
+  int getOrInsertRegion(Region r);
 
   /**
    * Get or insert on Target term
@@ -97,7 +97,7 @@ public interface TerrorismAPI {
    * @param target the Target
    * @return ID of new or existing Target
    */
-  int getOrInsertTarget(Target target);
+  int getOrInsertTarget(Target t);
 
   /**
    * Get or insert on TargetType term
@@ -105,7 +105,7 @@ public interface TerrorismAPI {
    * @param targetType the TargetType
    * @return ID of new or existing TargetType
    */
-  int getOrInsertTargetType(TargetType targetType);
+  int getOrInsertTargetType(TargetType t);
 
   /**
    * Get or insert on WeaponType term
@@ -113,7 +113,7 @@ public interface TerrorismAPI {
    * @param weaponType the WeaponType
    * @return ID of new or existing WeaponType
    */
-  int getOrInsertWeaponType(WeaponType weaponType);
+  int getOrInsertWeaponType(WeaponType w);
 
   /**
    * Set connection settings
