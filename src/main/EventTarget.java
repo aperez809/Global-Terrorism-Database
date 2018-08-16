@@ -5,7 +5,7 @@ public class EventTarget {
   private int eventId;
   private int targetId;
 
-  public EventTarget(int eventTargetId, int eventId, int targetId) {
+  public EventTarget(int eventId, int targetId) {
     this.eventTargetId = -1;
     this.eventId = eventId;
     this.targetId = targetId;

@@ -6,7 +6,7 @@ public class City {
   private String cityName;
 
 
-  public City(int cityId, String cityName) {
+  public City(String cityName) {
     this.cityId = -1;
     this.cityName = cityName;
   }

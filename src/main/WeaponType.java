@@ -5,8 +5,8 @@ public class WeaponType {
   private int weaponTypeId;
   private String weaponTypeTxt;
 
-  public WeaponType(int weaponTypeId, String weaponTypeTxt) {
-    this.weaponTypeId = weaponTypeId;
+  public WeaponType(String weaponTypeTxt) {
+    this.weaponTypeId = -1;
     this.weaponTypeTxt = weaponTypeTxt;
   }
 

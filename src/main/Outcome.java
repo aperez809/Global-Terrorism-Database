@@ -9,7 +9,10 @@ public class Outcome {
   private int numKilled;
   private int numInjured;
 
-  public Outcome(int eventId, boolean suicide, boolean multiple, boolean success, int numKilled,
+  public Outcome(boolean suicide,
+      boolean multiple,
+      boolean success,
+      int numKilled,
       int numInjured) {
     this.eventId = -1;
     this.suicide = suicide;

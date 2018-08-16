@@ -5,8 +5,8 @@ public class Provstate {
   private int provstateId;
   private String provstateName;
 
-  public Provstate(int provstateId, String provstateName) {
-    this.provstateId = provstateId;
+  public Provstate(String provstateName) {
+    this.provstateId = -1;
     this.provstateName = provstateName;
   }
 

@@ -14,7 +14,7 @@ public class Event {
   private int targetTypeId;
   private int weaponTypeId;
 
-  public Event(int eventId,
+  public Event(
       int year,
       int month,
       int day,

@@ -11,8 +11,12 @@ public class Location {
   private double longitude;
 
 
-  public Location(int locationId, int countryId, int regionId, int provstateId, int cityId,
-      double latitude, double longitude) {
+  public Location(int countryId,
+      int regionId,
+      int provstateId,
+      int cityId,
+      double latitude,
+      double longitude) {
     this.locationId = -1;
     this.countryId = countryId;
     this.regionId = regionId;

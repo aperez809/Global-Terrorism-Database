@@ -6,7 +6,7 @@ public class AttackType {
   private String attacktypeTxt;
 
 
-  public AttackType(int attacktypeId, String attacktypeTxt) {
+  public AttackType(String attacktypeTxt) {
     this.attacktypeId = -1;
     this.attacktypeTxt = attacktypeTxt;
   }

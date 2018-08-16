@@ -8,9 +8,11 @@ public class Target {
   private String specificTargetName;
   private int nationalityId;
 
-  public Target(int targetId, int targettypeId, String entityName, String specificTargetName,
+  public Target(int targettypeId,
+      String entityName,
+      String specificTargetName,
       int nationalityId) {
-    this.targetId = targetId;
+    this.targetId = -1;
     this.targetTypeId = targettypeId;
     this.entityName = entityName;
     this.specificTargetName = specificTargetName;

@@ -5,7 +5,7 @@ public class Nationality {
   private int nationalityId;
   private String nationalityTxt;
 
-  public Nationality(int nationalityId, String nationalityTxt) {
+  public Nationality(String nationalityTxt) {
     this.nationalityId = -1;
     this.nationalityTxt = nationalityTxt;
   }

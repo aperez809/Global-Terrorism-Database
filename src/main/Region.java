@@ -5,8 +5,8 @@ public class Region {
   private int regionId;
   private String regionName;
 
-  public Region(int regionId, String regionName) {
-    this.regionId = regionId;
+  public Region(String regionName) {
+    this.regionId = -1;
     this.regionName = regionName;
   }
 

@@ -5,8 +5,8 @@ public class TargetType {
   private int targetTypeId;
   private String targetTypeTxt;
 
-    public TargetType(int targetTypeId, String targetTypeTxt) {
-        this.targetTypeId = targetTypeId;
+    public TargetType(String targetTypeTxt) {
+        this.targetTypeId = -1;
         this.targetTypeTxt = targetTypeTxt;
     }
 
