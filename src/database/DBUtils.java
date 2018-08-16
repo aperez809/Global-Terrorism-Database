@@ -4,7 +4,6 @@ import java.sql.*;
 
 public class DBUtils {
 
-
   private String url;
   private String user;
   private String password;
@@ -101,16 +100,13 @@ public class DBUtils {
           key = rs.getInt(1);
         }
       }
-
       rs.close();
       stmt.close();
-
     } catch (SQLException e) {
       System.err.println(e.getMessage());
       e.printStackTrace();
     }
 
     return key;
-
   }
 }

@@ -7,7 +7,7 @@ public class TerrorismDB {
   public static void main(String[] args) throws Exception {
 
     // Initialize the connection TODO
-    api.setConnection("jdbc:mysql://localhost:DRIVER/terrorism", "USER", "PASSWORD");
+    api.setConnection("jdbc:mysql://localhost:3306/terrorism", "terror", "terrorpw");
 
     // Insert an event
     // Exception thrown if event already exists

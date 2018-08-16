@@ -3,8 +3,7 @@ package main;
 public interface TerrorismAPI {
 
   /**
-   * Retrieve event by its ID
-   * If no event with the given ID exists, return -1
+   * Retrieve event by its ID If no event with the given ID exists, return -1
    *
    * @param eventId the ID of the event
    * @return Event matching the given ID
