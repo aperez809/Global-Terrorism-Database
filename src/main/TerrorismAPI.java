@@ -21,7 +21,7 @@ public interface TerrorismAPI {
   /**
    * Get or insert on attacktype term
    *
-   * @param a the attacktype
+   * @param attackType the attacktype
    * @return ID of a new or existing attacktype
    */
   int getOrInsertAttackType(String attackType);
@@ -37,7 +37,7 @@ public interface TerrorismAPI {
   /**
    * Get or insert on country term
    *
-   * @param c the country
+   * @param country the country
    * @return ID of a new or existing country
    */
   int getOrInsertCountry(String country);
@@ -61,7 +61,7 @@ public interface TerrorismAPI {
   /**
    * Get or insert on Nationality term
    *
-   * @param n the nationality
+   * @param nationality the nationality
    * @return ID of new or existing nationality
    */
   int getOrInsertNationality(String nationality);
@@ -77,7 +77,7 @@ public interface TerrorismAPI {
   /**
    * Get or insert on Provstate term
    *
-   * @param p the Provstate
+   * @param provstate the Provstate
    * @return ID of new or existing Provstate
    */
   int getOrInsertProvstate(String provstate);
@@ -85,7 +85,7 @@ public interface TerrorismAPI {
   /**
    * Get or insert on Region term
    *
-   * @param r the Region
+   * @param region the Region
    * @return ID of new or existing Region
    */
   int getOrInsertRegion(String region);
@@ -93,7 +93,7 @@ public interface TerrorismAPI {
   /**
    * Get or insert on Target term
    *
-   * @param t the Target
+   * @param target the Target
    * @return ID of new or existing Target
    */
   int getOrInsertTarget(String target);
@@ -101,7 +101,7 @@ public interface TerrorismAPI {
   /**
    * Get or insert on TargetType term
    *
-   * @param t the TargetType
+   * @param targettype the TargetType
    * @return ID of new or existing TargetType
    */
   int getOrInsertTargetType(String targettype);
@@ -109,7 +109,7 @@ public interface TerrorismAPI {
   /**
    * Get or insert on WeaponType term
    *
-   * @param w the WeaponType
+   * @param weapontype the WeaponType
    * @return ID of new or existing WeaponType
    */
   int getOrInsertWeaponType(String weapontype);
