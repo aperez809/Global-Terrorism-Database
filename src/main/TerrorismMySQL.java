@@ -5,7 +5,7 @@ import database.DBUtils;
 public class TerrorismMySQL implements TerrorismAPI {
 
   // need a constructor
-  DBUtils dbu;
+  private DBUtils dbu;
 
   @Override
   public Event getEventById(int eventId) {

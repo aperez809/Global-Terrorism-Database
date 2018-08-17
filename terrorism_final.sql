@@ -21,7 +21,7 @@ USE `terrorism` ;
 -- Table `terrorism`.`country`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`country` (
-  `country_id` INT NOT NULL,
+  `country_id` INT NOT NULL AUTO_INCREMENT,
   `country_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`country_id`))
 ENGINE = InnoDB;
@@ -31,7 +31,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`region`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`region` (
-  `region_id` INT NOT NULL,
+  `region_id` INT NOT NULL AUTO_INCREMENT,
   `region_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`region_id`))
 ENGINE = InnoDB;
@@ -41,7 +41,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`provstate`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`provstate` (
-  `provstate_id` INT NOT NULL,
+  `provstate_id` INT NOT NULL AUTO_INCREMENT,
   `provstate_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`provstate_id`))
 ENGINE = InnoDB;
@@ -51,7 +51,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`city`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`city` (
-  `city_id` INT NOT NULL,
+  `city_id` INT NOT NULL AUTO_INCREMENT,
   `city_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`city_id`))
 ENGINE = InnoDB;
@@ -61,7 +61,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`location`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`location` (
-  `location_id` INT NOT NULL,
+  `location_id` INT NOT NULL AUTO_INCREMENT,
   `country_id` INT NOT NULL,
   `region_id` INT NOT NULL,
   `provstate_id` INT NULL,
@@ -100,7 +100,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`attacktype`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`attacktype` (
-  `attacktype_id` INT NOT NULL,
+  `attacktype_id` INT NOT NULL AUTO_INCREMENT,
   `attacktype_txt` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`attacktype_id`))
 ENGINE = InnoDB;
@@ -110,7 +110,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`weapontype`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`weapontype` (
-  `weapontype_id` INT NOT NULL,
+  `weapontype_id` INT NOT NULL AUTO_INCREMENT,
   `weapontype_txt` VARCHAR(75) NOT NULL,
   PRIMARY KEY (`weapontype_id`))
 ENGINE = InnoDB;
@@ -120,7 +120,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`event`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`event` (
-  `event_id` INT NOT NULL,
+  `event_id` INT NOT NULL AUTO_INCREMENT,
   `year` INT NOT NULL,
   `month` INT NOT NULL,
   `day` INT NOT NULL,
@@ -156,7 +156,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`outcome`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`outcome` (
-  `event_id` INT NOT NULL,
+  `event_id` INT NOT NULL AUTO_INCREMENT,
   `suicide` TINYINT NOT NULL,
   `multiple` TINYINT NOT NULL,
   `success` TINYINT NOT NULL,
@@ -175,7 +175,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`targettype`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`targettype` (
-  `targettype_id` INT NOT NULL,
+  `targettype_id` INT NOT NULL AUTO_INCREMENT,
   `targettype_txt` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`targettype_id`))
 ENGINE = InnoDB;
@@ -185,7 +185,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`nationalty`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`nationalty` (
-  `nationality_id` INT NOT NULL,
+  `nationality_id` INT NOT NULL AUTO_INCREMENT,
   `nationality_txt` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`nationality_id`))
 ENGINE = InnoDB;
@@ -220,7 +220,7 @@ ENGINE = InnoDB;
 -- Table `terrorism`.`eventtarget`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `terrorism`.`eventtarget` (
-  `event_target_id` INT NOT NULL,
+  `event_target_id` INT NOT NULL AUTO_INCREMENT,
   `event_id` INT NOT NULL,
   `target_id` INT NOT NULL,
   PRIMARY KEY (`event_target_id`),
