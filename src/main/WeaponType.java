@@ -15,7 +15,7 @@ public class WeaponType {
     return "WeaponType{" +
         "weaponTypeId=" + weaponTypeId +
         ", weaponTypeTxt=" + weaponTypeTxt +
-        '}';
+        "}";
   }
 
   public int getWeaponTypeId() {
